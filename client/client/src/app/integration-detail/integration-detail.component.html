@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<div class ="container color-dark">
+    <div class = "col">
+      <h4>Edit Integration information</h4>
+    </div>
+  </div>
+  <div class = "container color-light" *ngIf="netact">
+    <div class = "col">
+      <p>OMS: {{netact.oms}}</p>
+      <p>Netact: {{netact._id}}</p>
+      <p><label>Release:<span><input [(ngModel)]="netact.release" placeholder="release"/></span></label></p>
+      <p><label>ENB Version: <span><input [(ngModel)]="netact.enbversion" placeholder="ENB version"/></span></label></p>
+      <p><label>Owner:<span><input [(ngModel)]="netact.owner" placeholder="owner"/></span></label></p>
+      <p><span><button class="btn btn-sm btn-primary" (click)="save()">Save</button></span><span><button class="btn btn-sm btn-primary" (click)="goBack()">Go Back</button></span></p>
+    </div>
+  </div>
+
+<app-footer></app-footer>

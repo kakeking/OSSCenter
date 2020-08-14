@@ -1,0 +1,25 @@
+.col{ 
+    display: inline-block; width: 100%; 
+  }
+  .color-dark {
+    background:  rgb(56, 129, 151);
+    margin-top: 20px;
+    padding-top: 1em;
+    font-weight:bold;
+    font-size: 14pt;
+    text-align: center;
+    color:antiquewhite;
+  }
+  .color-light {
+    background:rgb(131, 150, 153);
+  }
+  .item-container {
+    background:#586c79;
+    margin-top: 20px;
+    padding:.5em;
+    cursor:pointer;
+    color:white;
+  }
+  .col p{
+    text-align: center;
+  }

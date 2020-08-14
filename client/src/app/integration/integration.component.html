@@ -1,0 +1,41 @@
+﻿<!--<div class="row" *ngFor="let netact of netacts">
+  <div class="col-sm-2">
+    <div class="card">
+      <div class="card-header">
+        Enb Version:{{netact.integration}}
+      </div>
+      <div class="card-block">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            Netact: {{netact.name | uppercase}}
+            <span>
+              <button class="btn btn-sm btn-primary" routerLink="/netact/{{netact._id}}">Details</button>
+            </span>
+          </li>
+          <li class="list-group-item">
+            OMS: {{netact.oms}}
+            <span>
+              <button class="btn btn-sm btn-primary" routerLink="/oms/{{netact.oms}}">Details</button>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>-->
+<section id="boxes" *ngFor="let netact of netacts">
+  <div class="container">
+    <div class="boxinte">
+      <h3>Release: {{netact.release}}</h3>
+      <p>Netact: {{netact.name | uppercase}}
+              <a routerLink="/netact/{{netact._id}}">Details</a>
+      </p>
+      <p>OMS: {{netact.oms}}
+              <a routerLink="/oms/{{netact.oms}}">Details</a>
+      </p>
+      <p>Enb Version: {{netact.enbversion}}</p>
+      <p>Owner: {{netact.owner}}</p>
+      <p><button class="btn btn-sm btn-primary"  routerLink="/integration/{{netact._id}}">Edit</button></p>
+    </div>
+  </div>
+</section>

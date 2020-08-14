@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+<div class ="container color-dark">
+    <div class = "col">
+      <h4>Add OMS</h4>
+    </div>
+  </div>
+  <div class = "container color-light">
+    <div class = "col">
+      <p><label>Id:<span><input #id /></span></label></p>
+      <p><label>Name:<span><input #name /></span></label></p>
+      <p><label>South Bridge IP:<span><input #southip /></span></label></p>
+      <p><label>North Bridge IP: <span><input #northip /></span></label></p>
+      <p><label>Username:<span><input #username /></span></label></p>
+      <p><label>Password:<span><input #password /></span></label></p>
+      <p><label>Super Password:<span><input #superpassword /></span></label></p>
+      <p><span><button class="btn btn-sm btn-primary" (click)="add(id.value, name.value, southip.value, northip.value, username.value, password.value, superpassword.value)">Add</button></span><span><button class="btn btn-sm btn-primary" (click)="goBack()">Go Back</button></span></p>
+    </div>
+  </div>
+<app-footer></app-footer>

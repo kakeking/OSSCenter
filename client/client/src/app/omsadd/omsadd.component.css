@@ -1,0 +1,31 @@
+.col{ 
+    display: inline-block; 
+    width: 90%; 
+  }
+  .color-dark {
+    background:  rgb(56, 129, 151);
+    margin-top: 20px;
+    padding-top: 1em;
+    font-weight:bold;
+    font-size: 14pt;
+    text-align: center;
+    color:antiquewhite;
+  }
+  .color-light {
+    padding-top: 20px;
+    background:white;
+    border: solid;
+    font-size: 13pt;
+    border-color: rgb(56, 129, 151);
+  }
+  .col p label input{
+      width: 600px;
+  }
+  .col p button{
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 13pt;
+  }
+  .col p span{
+      padding: 20px;
+  }

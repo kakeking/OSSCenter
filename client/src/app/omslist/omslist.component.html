@@ -1,0 +1,37 @@
+﻿<app-navbar></app-navbar>
+<!--<div class="card" style="width: 25rem;" *ngFor="let item of omss">
+    <div class="card-header">
+      {{item.name}}
+    </div>
+    <div class="card-block">
+      <ul class="list-group list-group-flush">
+        <!-- <li class="list-group-item">{{item.name}}</li> -->
+       <!-- <li class="list-group-item">South Bridge IP: {{item.south}}</li>
+        <li class="list-group-item">North Bridge IP: {{item.north}}</li>
+        <li class="list-group-item">Username:        {{item.username}}</li>
+        <li class="list-group-item">Password:        {{item.password}}</li>
+        <li class="list-group-item">Version:  {{item.version}}</li>
+        <li class="list-group-item">Integration:  {{item.integration}}</li>
+      </ul>
+    </div>
+ </div>  -->
+ <section id="boxes" *ngFor="let item of omss">
+   <div class="container">
+      <div class="box" [ngStyle]="{'background-color': item.status === 'normal'? 'rgb(183, 203, 211)' : 'rgb(214, 98, 52)'}">
+        <h4>{{item.name}}</h4>
+        <p>South Bridge IP: {{item.south}}</p>
+        <p>North Bridge IP: {{item.north}}</p>
+        <p>Username:        {{item.username}}</p>
+        <p>Password:        {{item.password}}</p>
+        <p>Version:  {{item.version}}</p>
+        <p>Integration:  {{item.integration}}</p>
+        <p>Status:  {{item.status}}</p>
+        <p><button class="btn btn-sm btn-primary" (click)="delete(item)">delete</button></p>
+      </div>
+    </div>
+    </section>
+    <button class="add" routerLink="/oms/addoms">Add</button>
+<app-footer></app-footer>
+
+
+

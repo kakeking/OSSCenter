@@ -1,0 +1,16 @@
+﻿<aside id="sidebar">
+  <div class="dark">
+        <div>
+          <p> Last updated on 2018-01-05 10:10</p>
+          <p> Click below link to refresh data</p>
+          <p><a (click)="dataService.refreshData()">Refresh</a></p>
+        <p><button class="btn"
+                (click)="messageService.clear()">
+          clear
+        </button></p>
+        <div class="message" *ngIf="messageService.messages.length">
+        <p *ngFor='let message of messageService.messages'> {{message}} </p>
+        </div>
+      </div>
+</div>
+</aside>

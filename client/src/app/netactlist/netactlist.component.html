@@ -1,0 +1,32 @@
+﻿<app-navbar></app-navbar>
+<!--<div class="card" style="width: 40rem;" *ngFor="let netact of netactList">
+        <div class="card-header">
+          {{netact.name}}
+        </div>
+        <div class="card-block">
+          <ul class="list-group list-group-flush">
+            <!-- <li class="list-group-item">{{netact.name}}</li> -->
+            <!--<li class="list-group-item">Ownership: {{netact.owner}}</li>
+            <li class="list-group-item">Username:  {{netact.username}}</li>
+            <li class="list-group-item">Password:  {{netact.password}}</li>
+            <li class="list-group-item">Version:  {{netact.version}}</li>
+            <li class="list-group-item">Node18 IP:  {{netact.nodes.node18}}</li>
+            <li class="list-group-item"><a href="https://{{netact.name}}lbwas.netact.nsn-rdnet.net/authentication/Login">Login Page</a></li>
+          </ul>
+        </div>
+      </div>-->
+      <section id="boxes" *ngFor="let netact of netactList">
+          <div class="container">
+             <div class="boxnetact" [ngStyle]="{'background-color': netact.oms.length > 0? 'rgb(183, 203, 211)' : 'rgb(252, 192, 103)'}">
+               <h4>{{netact.name}}</h4>
+               <p>Ownership: {{netact.owner}}</p>
+               <p>Username:  {{netact.username}}</p>
+               <p>Password:  {{netact.password}}</p>
+               <p>Version:  {{netact.version}}</p>
+               <p>Node18 IP:  {{netact.nodes.node18}}</p>
+               <p>Integration:  OMS: {{netact.oms}}</p>
+               <p><button class="btn btn-sm btn-primary" (click)="delete(netact)">delete</button></p>
+             </div>
+           </div>
+           </section>
+       <app-footer></app-footer>

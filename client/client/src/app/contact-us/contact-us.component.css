@@ -1,0 +1,13 @@
+  /* Main-col */
+  article#main-col{
+    margin-top:20px;
+    float:left;
+    width:65%;
+  }
+  .dark{
+    padding:15px;
+    background:#35424a;
+    color:#ffffff;
+    margin-top:10px;
+    margin-bottom:10px;
+  }

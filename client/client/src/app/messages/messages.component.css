@@ -1,0 +1,18 @@
+﻿/* Sidebar */
+aside#sidebar{
+    float:left;
+    clear: both;
+    width:17%;
+    margin-top:20px;
+  }
+.dark{
+    padding:15px;
+    background:#35424a;
+    color:#ffffff;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+.dark div p a {
+    color: rgb(222, 230, 240);
+    font-weight: bold;
+}

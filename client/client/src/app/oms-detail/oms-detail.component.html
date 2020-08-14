@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+  <div class ="container color-dark" *ngIf="oms">
+    <div class = "col">
+      <p>{{oms.name}} Detail Info</p>
+    </div>
+  </div>
+  <div class = "container color-light" *ngIf="oms">
+    <div class = "col">
+      <p class = "item-container">South Bridge IP: {{oms.south}}</p>
+      <p class = "item-container">North Bridge IP: {{oms.north}}</p>
+      <p class = "item-container">Username: {{oms.username}}</p>
+      <p class = "item-container">Password: {{oms.password}}</p>
+      <p class = "item-container">Version: {{oms.version}}</p>
+      <p class = "item-container">Integration: {{oms.integration}}</p>
+      <p class = "item-container">Status: {{oms.status}}</p>
+      <p><button class="btn btn-sm btn-primary" (click)="goBack()">Go Back</button></p>
+    </div>
+  </div>
+  <app-footer></app-footer>

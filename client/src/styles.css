@@ -1,0 +1,32 @@
+﻿/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,700");
+body {
+  background: rgba(255, 255, 255, 0.75);
+  padding: .1em;
+  font-family: 'Raleway', 'Arial';
+}
+ul{
+  list-style-type: none;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+ul li{
+  display:inline;
+  margin-right: 20px;
+}
+ul li a{
+  font-size: 1.0em;
+  color:brown
+}
+a{
+  color:black;
+  text-decoration:none;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+

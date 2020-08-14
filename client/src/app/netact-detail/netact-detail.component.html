@@ -1,0 +1,82 @@
+﻿<app-navbar></app-navbar>
+
+<!--  <div class="card" *ngIf="netact">
+  <div class="card-header">
+    {{netact.name}}
+  </div>
+  <div class="card-block">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Ownership: {{netact.owner}}</li>
+      <li class="list-group-item">Username:  {{netact.username}}</li>
+      <li class="list-group-item">Password:  {{netact.password}}</li>
+      <li class="list-group-item">Version:  {{netact.version}}</li>
+      <li class="list-group-item">Node18 IP:  {{netact.nodes.node18}}</li>
+      <li class="list-group-item"><a href="https://{{netact.name}}lbwas.netact.nsn-rdnet.net/authentication/Login">Login Page</a></li>
+      <li>
+        <button (click)="goBack()">Go Back</button>
+      </li>
+    </ul>
+  </div>-->
+  <div class="container color-dark">
+    <div class = "col-left">
+      <p> Basic Info</p>
+    </div>
+    <div class = "col-center">
+      <p>Nodes</p>
+    </div>
+    <div class = "col-right">
+      <p>Adaptations</p>
+    </div>
+  </div>
+  <div class ="container color-light" *ngIf="netact">
+      <div class = "col-left">
+        <p class = "item-container">Name: {{netact.name}}</p>
+        <p class = "item-container">Ownership: {{netact.owner}}</p>
+        <p class = "item-container">Username:  {{netact.username}}</p>
+        <p class = "item-container">Password:  {{netact.password}}</p>
+        <p class = "item-container">Version:  {{netact.version}}</p>
+        <p class = "item-container">IP:  {{netact.nodes.node18}}</p>
+        <p><a href="https://{{netact.name}}lbwas.netact.nsn-rdnet.net/authentication/Login">Login Page</a></p>
+        <p><button class="btn" (click)="goBack()">Go Back</button></p>
+      </div>
+      <div class = "col-center">
+        <p class = "item-container">Node 1: {{netact.nodes.node01}}</p>
+        <p class = "item-container">Node 2: {{netact.nodes.node02}}</p>
+        <p class = "item-container">Node 3: {{netact.nodes.node03}}</p>
+        <p class = "item-container">Node 4: {{netact.nodes.node04}}</p>
+        <p class = "item-container">Node 5: {{netact.nodes.node05}}</p>
+        <p class = "item-container">Node 6: {{netact.nodes.node06}}</p>
+        <p class = "item-container">Node 7: {{netact.nodes.node07}}</p>
+        <p class = "item-container">Node 8: {{netact.nodes.node08}}</p>
+        <p class = "item-container">Node 9: {{netact.nodes.node09}}</p>
+        <p class = "item-container">Node 10: {{netact.nodes.node10}}</p>
+        <p class = "item-container">Node 11: {{netact.nodes.node11}}</p>
+        <p class = "item-container">Node 12: {{netact.nodes.node12}}</p>
+        <p class = "item-container">Node 13: {{netact.nodes.node13}}</p>
+        <p class = "item-container">Node 14: {{netact.nodes.node14}}</p>
+        <p class = "item-container">Node 15: {{netact.nodes.node15}}</p>
+        <p class = "item-container">Node 16: {{netact.nodes.node16}}</p>
+        <p class = "item-container">Node 17: {{netact.nodes.node17}}</p>
+        <p class = "item-container">Node 18: {{netact.nodes.node18}}</p>
+        <p class = "item-container">Node 19: {{netact.nodes.node19}}</p>
+        <p class = "item-container">Node 20: {{netact.nodes.node20}}</p>
+        <p class = "item-container">Node 21: {{netact.nodes.node21}}</p>
+        <p class = "item-container">Node 22: {{netact.nodes.node22}}</p>
+        <p class = "item-container">Node 23: {{netact.nodes.node23}}</p>
+        <p class = "item-container">Node 24: {{netact.nodes.node24}}</p>
+        <p class = "item-container">Node 25: {{netact.nodes.node25}}</p>
+        <p class = "item-container">Node 26: {{netact.nodes.node26}}</p>
+        <p class = "item-container">Node 27: {{netact.nodes.node27}}</p>
+        <p class = "item-container">Node 28: {{netact.nodes.node28}}</p>
+        <p class = "item-container">Node 29: {{netact.nodes.node29}}</p>
+      </div>
+      <div class = "col-right">
+        <p class = "item-container">{{netact.adaptation.cmdmr}}</p>
+        <p class = "item-container">{{netact.adaptation.cmdsrer}}</p>
+        <p class = "item-container">{{netact.adaptation.cmdsre}}</p>
+        <p class = "item-container">{{netact.adaptation.cmdlte}}</p>
+        <p class = "item-container">{{netact.adaptation.cmdsrm}}</p>
+      </div>
+  </div>
+  <app-footer></app-footer>
+

@@ -1,0 +1,52 @@
+/* Header **/
+header {
+    background-color: rgba(214, 224, 226, 0.2);
+    color: #ffffff;
+    padding: 15px;
+    min-height: 80px;
+    border-bottom: #8ab5dd 3px solid;
+  }
+    header a {
+      color: rgb(34, 42, 65);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+  
+    header li {
+      float: left;
+      padding: 0 15px 0 15px;
+    }
+  
+    header #branding {
+      float: left;
+    }
+  
+    header #branding h1 {
+        margin: 0;
+        color: rgb(42, 53, 77);
+        padding: 10px;
+      }
+  
+    header nav {
+      float: right;
+      margin-top: 25px;
+      font-size: 17px;
+    }
+  
+    header .highlight {    /*style for title*/
+      color: #8ab5dd;
+      font-weight: bold;
+    }
+    header .normal a {
+      color: #8ab5dd;
+    }
+    header .current a {
+      color: burlywood;
+      font-weight: bold;
+    }
+  
+    header a:hover {
+      color: #cccccc;
+      font-weight: bold;
+    }
