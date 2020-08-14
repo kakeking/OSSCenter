@@ -7,8 +7,8 @@ oms ={
 	'south': '10.68.160.242',
 	'north': '10.68.160.243',
 	'username': 'Nemuadmin',
-	'password': 'nemuuser',
-	'superpw': 'nsn'
+	'password': '',
+	'superpw': ''
 }
 
 // function callback(data){

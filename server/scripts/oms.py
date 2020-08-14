@@ -52,13 +52,13 @@ def get_netactInfo_by_node7Ip(node7Ip):
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     print 'find integrated netact and connect to %s'%node7Ip
     try:
-        ssh.connect(node7Ip, username='omc2', password='zhouhang2', sock=proxy, timeout=300)
+        ssh.connect(node7Ip, username='', password='', sock=proxy, timeout=300)
     except paramiko.AuthenticationException:
         try:
-            ssh.connect(node7Ip, username='root', password='arthur', sock=proxy, timeout=300)
+            ssh.connect(node7Ip, username='r', password='', sock=proxy, timeout=300)
         except paramiko.AuthenticationException:
             try:
-                ssh.connect(node7Ip, username='omc2', password='zhouhang3', sock=proxy, timeout=300)
+                ssh.connect(node7Ip, username='', password='', sock=proxy, timeout=300)
             except paramiko.AuthenticationException:
                 return 1
 
@@ -76,9 +76,9 @@ def get_netact_adaptation_info(node18Ip):
     ssh.load_system_host_keys()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     try:
-        ssh.connect(node18Ip, username='omc2', password='zhouhang2', sock=proxy)
+        ssh.connect(node18Ip, username='', password='', sock=proxy)
     except paramiko.AuthenticationException:
-        ssh.connect(node18Ip, username='root', password='arthur', sock=proxy)
+        ssh.connect(node18Ip, username='', password='', sock=proxy)
     adaptation = {}
     current_version = ''
     ssh_stdin, ssh_stdout, ssh_stderr = ssh.exec_command('cat /etc/mpp-netact-release')
@@ -125,8 +125,8 @@ def get_netactInfo_by_oms(oms):
             netact['version'] = version
             netact['nodes'] = netact_nodes
             netact['owner'] = 'MN 4G RAN Airscale China Feature Prodzn OAM HZH1 Verification'
-            netact['username'] = 'omc2'
-            netact['password'] = 'zhouhang2'
+            netact['username'] = ''
+            netact['password'] = ''
             netact['enbversion'] = 'N/A'
             netact['release'] = 'N/A'
             netact['oms'] = [oms['_id']]

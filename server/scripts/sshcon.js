@@ -1,37 +1,3 @@
-// var OMS = {
-// 	HOST:"10.68.152.202",
-// 	USERNAME:"Nemuadmin",
-// 	PASSWORD:"nemuuser",
-// }
-// var host = {
-// 	server: {
-// 		host: OMS.HOST,
-// 		userName: OMS.USERNAME,
-// 		password: OMS.PASSWORD
-// 	},
-// 	commands: [
-// 	    "su root",
-// 		"printIOR `fsnwi3ctl -i | grep 'NAR_REG_SERVICE_IOR' | sed -e 's/NAR_REG_SERVICE_IOR=//'` | grep host"
-
-// 	],
-// 	onCommandProcessing( command, response, sshObj, stream){
-// 		if (command.match(/root/)&& response.indexOf("Password"!= -1)){
-// 			stream.write('nsn\n');
-// 		}
-// 	},
-// 	onEnd( sessionText, sshObj) {
-//         this.emit("msg", sessionText);
-// 	}
-// };
-// var SSH2Shell = require('ssh2shell');
-
-// SSH = new SSH2Shell(host);
-// callback = function(sessionText){
-// 	console.log(sessionText)
-// }
-
-// var output  = SSH.connect();
-// console.log(output);
 var Connection = require('ssh2');
 
 exports.getNetactNode7Ip = function(oms, result){
@@ -184,8 +150,8 @@ exports.getNetactHostName = function(netactNode7Ip, result){
 }}).connect({
 	host: netactNode7Ip,
 	port: 22,
-	username: 'omc2',
-	password: 'zhouhang2'
+	username: '',
+	password: ''
 })
 })}
 
